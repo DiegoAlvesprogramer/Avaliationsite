@@ -7,8 +7,21 @@
   width: 50px;
 }
 
+#logo:hover{
+  color:#fff;
+}
+
 #moviestar-title {
-  color: #FFF;
+  color: #ffd700; 
+  position: absolute;
+  bottom: -2px;
+  font-size: 30px;
+  left: 55px;
+  font-weight: bold;
+}
+
+#moviestar-title:hover {
+  color: #ffff; 
   position: absolute;
   bottom: -2px;
   font-size: 30px;
@@ -17,12 +30,12 @@
 }
 
 #main-navbar {
-  background-color: #121212;
+  background-color: #191970;
 }
 
 #search-form {
   margin: 0 auto;
-  background-color: #FFF;
+  background-color: #ffd700; 
   border-radius: 5px;
   width: 50%;
   margin-left: 180px;
@@ -44,12 +57,12 @@
 }
 
 .navbar-nav .nav-item .nav-link {
-  color: #FFF;
+  color: #ffd700; 
   transition: .5s;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #999;
+  color: #ffff;
 }
 
 .bold {
@@ -83,21 +96,21 @@
 
 /* Home */
 #main-container {
-  background-color: #000;
-  color: #FFF;
+  background-color: #191970;
+  color: #ffff; /* Azul piscina */
   min-height: 65vh;
   padding: 40px;
 }
 
 .section-title {
   font-size: 24px;
-  border-left: 4px solid #F5C518;
+  border-left: 6px solid #ffff; /* Azul piscina */
   padding-left: 12px;
   margin-top: 20px;
 }
 
 .section-description {
-  color: #CCC;
+  color: #ffff;
   font-size: 18px;
 }
 
@@ -108,11 +121,13 @@
 }
 
 .movie-card {
-  background-color: #1A1A1A;
+  background-color: #000;
   width: 18%;
   margin-bottom: 30px;
   margin-left: 1%;
   margin-right: 1%;
+  border-radius: 15px;
+  border-width: 7px;
 }
 
 .movie-card .card-img-top {
@@ -120,6 +135,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: inline-block;
 }
 
 .card-title {
@@ -128,20 +144,20 @@
 
 .card-title a {
   font-size: 16px;
-  color: #FFF;
+  color: #008B8B; /* Azul piscina */
 }
 
 .fas.fa-star {
-  color: #F5C518;
+  color: #ffd700; /* Azul piscina */
 }
 
 .rating {
-  color: #CCC;
+  color: #ffff;
 }
 
 .rate-btn {
   margin-bottom: 15px;
-  color: #5799EF;
+  color: #ffff;
   background-color: #333;
   border-color: #333;
   width: 100%;
@@ -168,7 +184,7 @@
 #login-container h2,
 #register-container h2 {
   text-align: center;
-  border-bottom: 2px solid #F5C518;
+  border-bottom: 2px solid #00ffff; /* Azul piscina */
   width: 200px;
   margin: 0 auto;
   padding: 10px;
@@ -182,15 +198,15 @@
 
 .card-btn {
   color: #000;
-  background-color: #F5C518;
-  border: 2px solid #F5C518;
+  background-color: #00ffff; /* Azul piscina */
+  border: 2px solid #00ffff; /* Azul piscina */
   width: 100%;
 }
 
 .card-btn:hover {
   background-color: transparent;
-  color: #F5C518;
-  border-color: #F5C518;
+  color: #00ffff; /* Azul piscina */
+  border-color: #00ffff; /* Azul piscina */
 }
 
 /* Edit Profile */
@@ -198,7 +214,7 @@
 .profile-image-container {
   width: 150px;
   height: 150px;
-  border: 6px solid #F5C518;
+  border: 6px solid #008B8B; /* Azul piscina */
   border-radius: 100%;
   background-size: cover;
   background-position: center;
@@ -242,35 +258,35 @@
   margin: 20px auto;
 }
 
-.about-title {
+about-title {
   color: #CCC;
 }
 
-.profile-description {
+profile-description {
   max-width: 500px;
   margin: 20px auto;
 }
 
-.added-movies-container,
-.about-container {
+added-movies-container,
+about-container {
   padding-top: 20px;
 }
 
-.about-container {
+about-container {
   text-align: center;
   background-color: #333;
   border-bottom: 3px solid #CCC;
 }
 
-.added-movies-container {
+added-movies-container {
   background-color: #333;
 }
 
-.added-movies-container .movies-container {
+added-movies-container .movies-container {
   padding: 20px;
 }
 
-.added-movies-container .movie-card {
+added-movies-container .movie-card {
   width: 31%;
 }
 
@@ -283,17 +299,17 @@
   text-align: left;
 }
 
-.movie-image-container {
-  height: 400px;
-  min-width: 200px;
+movie-image-container {
+  height: 300px;
+  min-width: 100px;
   background-position: center;
   background-size: cover;
 }
 
-.page-title:after {
+page-title:after {
   content: "";
   width: 300px;
-  border-bottom: 2px solid #F5C518;
+  border-bottom: 2px solid #008B8B; /* Azul piscina */
   display: block;
   margin: 0 auto;
   padding-top: 7px;
@@ -304,12 +320,12 @@
   text-align: center;
 }
 
-.movie-details {
+movie-details {
   margin: 25px 0;
 }
 
-.pipe {
-  border: 1px solid #333;
+pipe {
+  border: 1px solid #ffff;
   margin: 0 10px;
 }
 
@@ -330,23 +346,23 @@
 #reviews-container {
   margin-top: 20px;
   padding-top: 20px;
-  border-top: 4px solid #F5C518;
+  border-top: 4px solid #008B8B; /* Azul piscina */
 }
 
-.review {
+review {
   padding: 20px 0;
   border-bottom: 1px solid #333;
 }
 
-.author-details-container {
+author-details-container {
   padding-top: 20px;
 }
 
-.author-name a {
-  color: #F5C518;
+author-name a {
+  color: #008B8B; /* Azul piscina */
 }
 
-.comment-title {
+comment-title {
   color: #999;
 }
 
@@ -367,52 +383,54 @@
   padding: 15px 0;
 }
 
-.table-movie-title {
+table-movie-title {
   color: #FFF;
   font-weight: bold;
   transition: .5s;
 }
 
-.table-movie-title:hover {
-  color: #F5C518;
+table-movie-title:hover {
+  color: #008B8B; /* Azul piscina */
 }
 
-.actions-column {
+actions-column {
   max-width: 75px;
   text-align: center;
 }
 
-.actions-column form {
+actions-column form {
   display: inline-block;
 }
 
-.edit-btn,
-.delete-btn {
+edit-btn,
+delete-btn {
   padding: 5px 10px;
   border-radius: 5px;
   margin: 0 5px;
   font-weight: bold;
   transition: .5s;
   border: none;
+  display: inline-block;
 }
 
-.edit-btn {
+edit-btn {
   background-color: #0DCAF0;
   color: #FFF;
+  display: inline-flexbox;
+  padding: auto;
 }
 
-.edit-btn:hover {
+edit-btn:hover {
   background-color: transparent;
   color: #0DCAF0;
   text-decoration: none;
 }
 
-.delete-btn {
-  background-color: #DC3545;
+delete-btn {
   color: #FFF;
 }
 
-.delete-btn:hover {
+delete-btn:hover {
   background-color: transparent;
   color: #DC3545;
   text-decoration: none;
@@ -424,29 +442,33 @@
 }
 
 #search-result,
-.back-link {
-  color: #F5C518;
+back-link {
+  color: #008B8B; /* Azul piscina */
 }
 
 /* Footer */
 #footer {
-  background-color: #000;
-  color: #FFF;
+  background-color: #191970;
+  color: #ffff;
   text-align: center;
   margin: 0;
-  padding: 20px;
+  padding: 5px;
 }
 
 #social-container ul,
 #footer-links-container ul {
+  color: #ffff;
   list-style-type: none;
   padding: 0;
+  align-self: start;;
+  display: inline-block;
+  
 }
 
 #social-container li,
 #footer-links-container li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 25px;
 }
 
 #social-container li {
@@ -458,12 +480,14 @@
 }
 
 #social-container li:hover {
-  background-color: #333;
+  transition: ;
+  background-color: #ffff;
 }
 
 #social-container a,
-#footer-links-container a {
-  color: #FFF;
+#footer-links-container a { 
+  background-color: none;
+  color: #ffff;
   transition: .5s;
 }
 
@@ -472,6 +496,7 @@
 }
 
 #footer-links-container {
+  color: #ffff;
   margin: 30px 0;
 }
 
@@ -569,3 +594,4 @@
   }
 
 }
+

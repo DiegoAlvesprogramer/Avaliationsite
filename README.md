@@ -1,2 +1,0 @@
-# ProjetoModelagemdeSistemas
-Trabalho da Faculdade

@@ -1,6 +1,18 @@
 <?php
   require_once("templates/header.php");
 
+  // Defina a função getYoutubeVideoId
+  function getYoutubeVideoId($youtubeLink) {
+      $videoId = null;
+      $pattern = '/[?&]v=([^&]+)/';
+
+      if (preg_match($pattern, $youtubeLink, $matches)) {
+          $videoId = $matches[1];
+      }
+
+      return $videoId;
+  }
+
   // Verifica se usuário está autenticado
   require_once("models/Movie.php");
   require_once("dao/MovieDAO.php");
@@ -24,12 +36,14 @@
     $movie = $movieDao->findById($id);
 
     // Verifica se o filme existe
-    if(!$movie) {
-
+    if (!$movie) {
       $message->setMessage("O filme não foi encontrado!", "error", "index.php");
+    } else {
+      // Extrai o ID do vídeo do YouTube a partir do link armazenado no banco de dados
+      $videoLink = $movie->trailer;
+      $videoId = getYoutubeVideoId($videoLink);
 
     }
-
   }
 
   // Checar se o filme tem imagem
@@ -48,7 +62,7 @@
 
     // Resgatar as revies do filme
     $alreadyReviewed = $reviewDao->hasAlreadyReviewed($id, $userData->id);
- 
+
   }
 
   // Resgatar as reviews do filme
@@ -66,7 +80,7 @@
         <span class="pipe"></span>
         <span><i class="fas fa-star"></i> <?= $movie->rating ?></span>
       </p>
-      <iframe src="<?= $movie->trailer ?>" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encryted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/<?= $videoId ?>?rel=0&showinfo=0&controls=1&enablejsapi=1&key=AIzaSyBigbl_FEQig7ooYQ6XftkPekA-Iglbyws" width="560" height="315" weight="200%"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <p><?= $movie->description ?></p>
     </div>
     <div class="col-md-4">
