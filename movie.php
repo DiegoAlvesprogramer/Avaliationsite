@@ -69,7 +69,7 @@
   $movieReviews = $reviewDao->getMoviesReview($movie->id);
 
 ?>
-<div id="main-container" class="container-fluid">
+<div id="main-container" class="container-fluid" >
   <div class="row">
     <div class="offset-md-1 col-md-6 movie-container">
       <h1 class="page-title"><?= $movie->title ?></h1>
@@ -80,7 +80,7 @@
         <span class="pipe"></span>
         <span><i class="fas fa-star"></i> <?= $movie->rating ?></span>
       </p>
-      <iframe src="https://www.youtube.com/embed/<?= $videoId ?>?rel=0&showinfo=0&controls=1&enablejsapi=1&key=AIzaSyBigbl_FEQig7ooYQ6XftkPekA-Iglbyws" width="560" height="315" weight="200%"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="video" src="https://www.youtube.com/embed/<?= $videoId ?>?rel=0&showinfo=0&controls=1&enablejsapi=1&key=AIzaSyBigbl_FEQig7ooYQ6XftkPekA-Iglbyws" width="560" height="315" weight="200%"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <p><?= $movie->description ?></p>
     </div>
     <div class="col-md-4">
