@@ -522,6 +522,11 @@ back-link {
     margin-bottom: 1rem;
   }
 
+  .container-fluid{
+    align-items: center;
+    width: auto;
+  }
+
   .movies-container {
     padding: 0 15px;
   }
@@ -545,6 +550,8 @@ back-link {
 
   .movie-container iframe {
     max-width: 100% !important;
+    width: auto;
+    border: 10px;
   }
 
   #reviews-container {
