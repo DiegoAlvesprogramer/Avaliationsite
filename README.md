@@ -1,1 +1,1 @@
-# Projeto de site de Avaliações realizado na faculdade
+# Projeto de site em PHP de Avaliações realizado na faculdade
