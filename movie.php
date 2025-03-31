@@ -80,8 +80,7 @@
         <span class="pipe"></span>
         <span><i class="fas fa-star"></i> <?= $movie->rating ?></span>
       </p>
-      <iframe class="video" src="https://www.youtube.com/embed/<?= $videoId ?>?rel=0&showinfo=0&controls=1&enablejsapi=1&key=AIzaSyBigbl_FEQig7ooYQ6XftkPekA-Iglbyws" width="560" height="315" weight="200%"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p><?= $movie->description ?></p>
+      
     </div>
     <div class="col-md-4">
       <div class="movie-image-container" style=" background-size:cover; background-image: url('<?= $BASE_URL ?>img/movies/<?= $movie->image ?>')"></div>
